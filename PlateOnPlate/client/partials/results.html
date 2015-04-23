@@ -1,0 +1,138 @@
+<span ng-controller='MyCtrl' ng-app="angularSlideables" ng-app='ModalDemo' >
+
+<!-- 	<div class="error">Please insert valid location <a href="#" class='x'>x</a></div> -->
+<!-- MOBILE HEADER -->
+	<div class="hidden-header-nl" ng-app="angularSlideables">
+	    <a class="min-logo-nl" href="#/">Plate on Plate</a>
+	    <form class="hidden-nl">
+	    	<input type="text" placeholder='Search...'>
+	    	<input type="submit" value="Search">
+	    </form>
+	   	<img slide-toggle="#derp" class="hamburger-nl" src="/imgs/hamburger-01.png" />
+	    <div id="derp" class="slideable">
+			    <p><a ng-click='toggleModal1()'>Register</a></p>
+			    <modal-dialog show='modalShown' width='300px' height='55%'>
+			      <form class="register-modal">
+			      	<span class='register'>Register</span>
+			      	<input type="text" placeholder='email'>
+			      	<input type="text" placeholder='name'>
+			      	<input type="text" placeholder='password'>
+			      	<input type="text" placeholder='confirm password'>
+			      	<input type="submit" value="Signup">
+			      </form>
+			    </modal-dialog>
+		    		<p ng-click='toggleModal()'><a>Sign In</a></p>
+				    <modal-dialog show='modalShown1' width='300px' height='40%'>
+				    	<span class='signin'>Sign In</span>
+				     	<form class="register-modal">
+				      	<input type="text" placeholder='email'>
+				      	<input type="text" placeholder='password'>
+				      	<input type="submit" value="Sign In">
+				      </form>
+				    </modal-dialog>
+	        <p><a href="#">Help</a></p>
+	        <p><a href="#">List Your Plate</a></p>
+	    </div>
+	</div>
+<!-- FULL LENGTH HEADER -->
+	<div class="row header-nl header-white">
+	   	<div class="six columns fix-white">
+	   		<span class="logo-nl"><a class="fix-logo" href="#/">Plate on Plate</a></span>
+		   	<form class=" hidden-form">
+		   		<input type="text" placeholder='Search...'>
+		   		<input type="submit" value="Search">
+		   	</form>
+	   	</div>
+	    <div class="six columns, u-pull-right">
+	    	<ul class="headlinks-nl">
+			    <li><a class="sign-up-button" ng-click='toggleModal1()'>Register</a></li>
+			    <modal-dialog show='modalShown' width='300px' height='400px'>
+			    	<span class='register'>Register</span>
+			     	<form class="register-modal">
+			      	<input type="text" placeholder='email'>
+			      	<input type="text" placeholder='name'>
+			      	<input type="text" placeholder='password'>
+			      	<input type="text" placeholder='confirm password'>
+			      	<input type="submit" value="Signup">
+			      </form>
+			    </modal-dialog>
+	    		<li class="sign-up-button" ng-click='toggleModal()'><a>Sign In</a></li>
+			    <modal-dialog show='modalShown1' width='300px' height='300px'>
+			    	<span class='signin'>Sign In</span>
+			     	<form class="register-modal">
+			      	<input type="text" placeholder='email'>
+			      	<input type="text" placeholder='password'>
+			      	<input type="submit" value="Sign In">
+			      </form>
+			    </modal-dialog>
+	    		<li><a >Help</a></li>
+	    		<li><a class="lyp-nl, button" href="">List Your Plate</a></li>
+	    	</ul>
+	    </div>
+	</div>
+	<div class="results-container">
+		<div class="results">
+			<form class='search-filters'>
+				<div class="border1">
+					<div class="filter-title">
+						<span class='date-title'>Date</span>
+					</div>
+					<div class="filter-inputs">
+						<input type="date">
+						<select class="guests">
+							<option>1 Guest</option>
+							<option>2 Guests</option>
+							<option>3 Guests</option>
+							<option>4 Guests</option>
+						</select>
+					</div>
+				</div>
+				<div class="border2">
+					<div class="filter-title">
+						<span class='type-title'>Find</span>
+					</div>
+					<div class="filter-inputs">
+						<input type="text" placeholder='tacos, cheap dinner, persian'>
+					</div>
+				</div>
+				<div class="border3">
+					<div class="filter-title">
+						<span class='sort-title'>Sort by</span>
+					</div>
+					<div class="filter-inputs">
+						<a class='most-reviewd' href="#">Most Reviewed</a>
+						<a href="#">Highest Rated</a>
+					</div>
+				</div>
+			</form>	
+			<div class="result-tiles">
+				<div class='img-container'>		
+			<!-- 		<div class="img-tile1 u-max-full-width">
+						<span class='tile-name'>Mama Dean's</span>
+					</div>	
+					<span class='tile-cusines'>Italian - Homecooked - Grandma</span>
+				</div>
+				<div class='img-container'>		
+					<div class="img-tile2 u-max-full-width">
+						<span class='tile-name'>Arash's Dinner</span>
+					</div>	
+					<span class='tile-cusines'>Persian - Onions - Healthy</span>
+				</div>
+				<div class='img-container'>		
+					<div class="img-tile3 u-max-full-width">
+						<span class='tile-name'>Paula's Paella</span>
+					</div>	
+					<span class='tile-cusines'>Japanese - Affordable - Homey</span>
+				</div> -->
+			</div>
+		</div>		   	
+		</div>
+		<div class='map-container'>
+			<div id="googleMap" ></div>
+		</div>
+	</div>
+	</span>
+	
+
+
+
