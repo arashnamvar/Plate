@@ -73,7 +73,7 @@
 		}
 
 
-@media (max-width: 796px) {
+@media handheld, screen and (max-width: 796px) {
 		.header.row div, ul, li{
 			display:none;
 		}
@@ -116,7 +116,7 @@
 		
 }
 
-@media (min-width: 797px) {
+@media handheld, screen and (min-width: 797px) {
 		 .hidden {
 		 	display: none;
 		 }
