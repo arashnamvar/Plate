@@ -4,7 +4,7 @@
 		opacity: .95;
 		font-weight: bold;
 		text-decoration: none;
-		    width: 148px;
+		    width: 151px;
 	}
 	.headlinks-nl li, a {
 			display: inline-block;
@@ -57,13 +57,13 @@
 }
 
 .fix-logo {
-	    width: 148px;
+	    width: 151px;
 }
 
 /*MODAL*/
 
 .ng-modal-overlay {
-  /* A dark translucent div that covers the whole screen */
+
   position:absolute;
   z-index:9999;
   top:0;
@@ -73,6 +73,7 @@
   background-color:#000000;
   opacity: 0.8;
 }
+
 .ng-modal-dialog {
   z-index:10000;
   position: absolute;
@@ -87,10 +88,12 @@
   border-radius: 5px;
   vertical-align: top;
 }
+
 .ng-modal-dialog-content {
   padding:10px;
   text-align: left;
 }
+
 .ng-modal-close {
   position: absolute;
   top: 3px;
@@ -182,7 +185,7 @@
 		}
 
 		.min-logo-nl {
-		    width: 148px;
+		    width: 151px;
 			color: #0C363F;
 			font-size: 1.5em;
 			opacity: .95;
