@@ -397,62 +397,17 @@
 
 /*RESULT TILES*/
 
-.result-tiles {
-	background-color: #F5F5F5;
-	width: 100%;
-	vertical-align: top;
-	text-align: center;
-	display: inline-block;
+.stars {
+	height: 25px;
+	width: 130px;
+	background-image: url('http://i.imgur.com/vCGLTmD.jpg');
 }
 
-.img-container {
-	text-align: center;
-	display: inline-block;
-	width: 25%;
-	margin: 3%;
-}
-
-.img-tile1 {
-	display: inline-block;
-	width:  285px;
-	height: 285px;
-	background-image: url("http://i.imgur.com/G28oAE2.jpg");
+.chef-img {
+	width: 200px;
+	height: 100px;
 	background-repeat:no-repeat;
-	background-size:cover;
-   	background-position: center; 
-   	margin: 0 auto; 
-}
-
-.img-tile2 {
-	display: inline-block;
-	width:  285px;
-	height: 285px;
-	background-repeat:no-repeat;
-	background-size:cover;
-   	background-position: center; 
-   	margin: 0 auto;
-   	background-image: url("http://i.imgur.com/6kodPza.jpg");
-}
-
-.img-tile3 {
-	display: inline-block;
-	width:  285px;
-	height: 285px;
-	background-repeat:no-repeat;
-	background-size:cover;
-   	background-position: center; 
-   	margin: 0 auto;
-   	background-image: url("http://i.imgur.com/oIqYYb9.jpg");
-}
-
-.tile-name {
-	color: #fff;
-	-webkit-font-smoothing: antialiased;
-	font-size: 24px;
-	text-shadow: 0 1px 4px rgba(0, 0, 0, .8);
-	display: block;
-}
-
-.title-cusines {
-	display: block;
+    background-size:cover;
+    background-position: center center;
+	background-image: url("http://i.imgur.com/IO557b9.jpg");
 }

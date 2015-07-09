@@ -58,6 +58,10 @@
 			opacity: .9;
 			text-decoration: none;
 			color: white;
+			vertical-align: top;
+		}
+
+		.headlinks li:not(:last-child) {
 		}
 
 		.headlinks a:hover {
@@ -73,7 +77,7 @@
 		}
 
 
-@media handheld, screen and (max-width: 796px) {
+@media handheld, screen and (max-width: 840px) {
 		.header.row div, ul, li{
 			display:none;
 		}
@@ -83,40 +87,40 @@
 		 	height: 0;
 		}
 
-		#derp a {
+		#showmenu a {
 			margin-left: 5px;
 			padding-bottom: 0px;
 			margin-bottom: 0px;
 			margin-top: 0px;
 		}
 
-		#derp div:first-child {
+		#showmenu div:first-child {
 			padding-top: 25px;
 		}
 
-		#derp li {
+		#showmenu li {
 			margin:0px;
 			padding: 0px;
 		}
 
-		#derp a {
+		#showmenu a {
 			margin-bottom: 5px;
 			background-color: white;
 			text-decoration: none;
 			color: #0C343D ;
 		}
 
-		#derp a:hover {
+		#showmenu a:hover {
 			color: #A9A9A9;
 		}
 		
-		#derp p {
+		#showmenu p {
 			height: 15px;
 		}
 		
 }
 
-@media handheld, screen and (min-width: 797px) {
+@media handheld, screen and (min-width: 840px) {
 		 .hidden {
 		 	display: none;
 		 }
@@ -234,3 +238,223 @@
 	font-weight: 400;
 	margin-left: 36%;
 }
+
+
+/*EXPLORE THE WORLD*/
+
+@media handheld, screen and (max-width: 698px) {
+
+	.discover-options h5 {
+		font-size: 120%;
+	}
+
+	.background-img-dinner {
+		margin-top: 5%;
+		background: linear-gradient(
+		      rgba(0,0,0,.4), 
+		      rgba(0,0,0,.4)),
+		      url("http://www.englishtraditions.com/blog/wp-content/uploads/2013/07/Candlelight-Dinner-Party.jpg");
+		background-repeat:no-repeat;
+	    background-size:cover;
+	    height: 100%;
+	    background-position: center; 
+	    max-height: 525px;
+	    display: block;
+	}
+}
+
+@media handheld, screen and (max-width: 549px) {
+
+	.discover-options h5 {
+		font-size: 255%;
+	}
+
+	.discover-options div {
+		margin-top: 2%;
+	}
+}
+
+.discover-options {
+	margin-top: 2%;
+}
+
+.center-title {
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 2%;
+}
+
+.brooklyn {
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://i.imgur.com/RTTS2iH.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	vertical-align: top;
+}
+
+.san-francisco {
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://i.imgur.com/ev8b8ko.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	vertical-align: top;
+}
+
+.portland {
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://i.imgur.com/75mAN8j.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	vertical-align: top;
+}
+
+h5{
+	padding: 20% 0 10% 0;
+	text-align: center;
+	color: white;
+}
+
+h5 a {
+	color: white;
+	text-decoration: none;
+}
+
+/*MOST POPULAR CUSINES*/
+
+.three-pic-container-bottom {
+	margin-top: 3%;
+}
+
+.thai {
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://i.imgur.com/TIdHqPm.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.iranian {
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://i.imgur.com/JLscWv7.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.italian {
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://i.imgur.com/8Uy69QG.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+/*VIDEO*/
+
+.background-img-dinner {
+	margin-top: 5%;
+	background: linear-gradient(
+	      rgba(0,0,0,.4), 
+	      rgba(0,0,0,.4)),
+	      url("http://www.englishtraditions.com/blog/wp-content/uploads/2013/07/Candlelight-Dinner-Party.jpg");
+	background-repeat:no-repeat;
+    background-size:cover;
+    height: 65%;
+    background-position: center; 
+    max-height: 225px;
+    display: block;
+}
+
+h3 {
+	color: white;
+	max-width: 500px;
+	margin: 5px auto 0 auto;
+	padding: 2% 0 0;
+	text-align: center;
+}
+
+.play-button {
+    height: 40px;
+    width: 65px;    
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: relative;
+    margin: 2% auto;
+    text-align: center;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 173, 239, 0.9);
+}
+
+.play-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10.5px;
+    left: 24px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 9.5px 0 9.5px 17px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+/*LEARN MORE*/
+
+.how-to {
+	max-width: 500px;
+	text-align: center;
+	margin: 3% auto 3%;
+}
+
+.button {
+  margin: 0 27px 27px;
+}
+
+.how-to-action {
+	margin: 10% 0 0 5%;
+}
+
+/*FOOTER*/
+.footer {
+	width: 100%;
+	height: 25%;
+	background-color: gray;
+	vertical-align: bottom;
+}
+
+.footer ul {
+	display: inline-block;
+	vertical-align: top;
+	list-style-type: none;
+	margin: 5% 0 0 10%;
+	color: white;
+
+}
+
+.footer li {
+	margin-top: -.5em;
+	font-size: .75em;
+}
+
+.container-foot {
+	max-width: 600px;
+	margin: auto;
+	
+}
+
+.foot-head {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+

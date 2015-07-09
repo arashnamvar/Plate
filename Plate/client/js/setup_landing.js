@@ -40,53 +40,6 @@ PonP.controller('MyCtrl', ['$scope', function($scope) {
 
 }]);
 
-
-PonP.controller('resultsController', ['$scope', function($scope) {
-  $scope.modalShown = false;
-  $scope.toggleModal1 = function() {
-    $scope.modalShown = !$scope.modalShown;
-  };
-
-    $scope.modalShown1 = false;
-  $scope.toggleModal = function() {
-    $scope.modalShown1 = !$scope.modalShown1;
-  };
-
-  var myCenter=new google.maps.LatLng(42.508742,-0.120850);
-
-  function initialize()
-  {
-  var mapProp = {
-    center:myCenter,
-    disableDefaultUI:true,
-    zoom:5,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-  var marker=new google.maps.Marker({
-    position:myCenter,
-    });
-
-  marker.setMap(map);
-
-  var infowindow = new google.maps.InfoWindow({
-    content:"Arash's Vegetarian Bistro!"
-    });
-
-  var infowindow2 = new google.maps.InfoWindow({
-    content:"Cody's Pizza Palace!"
-    });
-
-  infowindow.open(map,marker);
-  infowindow2.open(map,marker);
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
-  initialize();
-}]);
-
 // SLIDING NAV FOR MOBILE DIRECTIVE//
 
 PonP.directive('slideable', function () {
@@ -98,7 +51,7 @@ PonP.directive('slideable', function () {
             element.html('<div class="slideable_content" >' + contents + '</div>');
             return function postLink(scope, element, attrs) {
                 // default properties
-                attrs.duration = (!attrs.duration) ? '.5s' : attrs.duration;
+                attrs.duration = (!attrs.duration) ? '.275s' : attrs.duration;
                 attrs.easing = (!attrs.easing) ? 'ease-in-out' : attrs.easing;
                 element.css({
                     'overflow': 'hidden',
@@ -146,7 +99,7 @@ PonP.directive('modalDialog', function() {
     transclude: true, // we want to insert custom content inside the directive
     link: function(scope, element, attrs) {
       scope.dialogStyle = {};
-      if (attrs.width)
+      if (attrs.width) 
         scope.dialogStyle.width = attrs.width;
       if (attrs.height)
         scope.dialogStyle.height = attrs.height;

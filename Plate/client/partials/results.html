@@ -5,7 +5,7 @@
 	<div class="hidden-header-nl" ng-app="angularSlideables">
 	    <a class="min-logo-nl" href="#/">Plate on Plate</a>
 	    <form class="hidden-nl">
-	    	<input type="text" placeholder='Search...'>
+	    	<input ng-model='searchlocation'type="text" placeholder='Search...'>
 	    	<input type="submit" value="Search">
 	    </form>
 	   	<img slide-toggle="#derp" class="hamburger-nl" src="/imgs/hamburger-01.png" />
@@ -39,7 +39,7 @@
 	   	<div class="six columns fix-white">
 	   		<span class="logo-nl"><a class="fix-logo" href="#/">Plate on Plate</a></span>
 		   	<form class=" hidden-form">
-		   		<input type="text" placeholder='Search...'>
+		   		<input ng-model='searchlocation'type="text" placeholder='Search...'>
 		   		<input type="submit" value="Search">
 		   	</form>
 	   	</div>
@@ -105,33 +105,21 @@
 					</div>
 				</div>
 			</form>	
-			<div class="result-tiles">
-				<div class='img-container'>		
-			<!-- 		<div class="img-tile1 u-max-full-width">
-						<span class='tile-name'>Mama Dean's</span>
-					</div>	
-					<span class='tile-cusines'>Italian - Homecooked - Grandma</span>
-				</div>
-				<div class='img-container'>		
-					<div class="img-tile2 u-max-full-width">
-						<span class='tile-name'>Arash's Dinner</span>
-					</div>	
-					<span class='tile-cusines'>Persian - Onions - Healthy</span>
-				</div>
-				<div class='img-container'>		
-					<div class="img-tile3 u-max-full-width">
-						<span class='tile-name'>Paula's Paella</span>
-					</div>	
-					<span class='tile-cusines'>Japanese - Affordable - Homey</span>
+			<!-- <div class="result-tiles">
+				<div class='row'>
+					<div class='eight columns'>
+						<h6 class="result-name">VooDoo Mama Joo Joos'</h6>
+						<div class="stars"></div>
+					</div>
+					<div class='u-max-full-width chef-img four columns'></div>
 				</div> -->
-			</div>
-		</div>		   	
+			</div>	   	
 		</div>
 		<div class='map-container'>
 			<div id="googleMap" ></div>
 		</div>
 	</div>
-	</span>
+</span>
 	
 
 
